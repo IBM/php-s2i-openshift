@@ -1,0 +1,146 @@
+body, html {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.control {
+  max-width: 900px;
+  min-width: 900px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.banner {
+  height: 60px;
+  width: 100%;
+  background: #00ABC0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+.summit {
+  font-weight: medium;
+  font-size: 16px;
+  color: white;
+}
+
+.menu {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.account {
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: white;
+}
+
+menuitem {
+  margin: 10px;
+}
+
+.lit {
+  opacity: 1;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  width: 684px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #99DDE5;
+  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  overflow: auto;
+}
+
+.boxheader {
+  background: #CCEEF2;
+  height: 50px;
+  border-bottom: 1px solid #99DDE5;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.boxicon {
+  margin: 10px;
+  height: 30px;
+}
+
+.boxlabel {
+  color: #0F4C81;
+  font-weight: bold;
+}
+
+.boxitem {
+  height: 42px;
+  border-bottom: 1px solid #99DDE5;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.boxitemlabel {
+  color: #0F4C81;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  color: #0F4C81;
+  font-size: 14px;
+}
