@@ -10,7 +10,13 @@
   <meta name="Max Shapiro" content="Summit Health">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
   <link rel="stylesheet" href="style/styles.css?v=1.0">
+  <link rel="stylesheet" href="style/admin.css?v=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+
   <link rel="icon" type="image/png" href="images/summitlogo@2x.png">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js'></script>
+
 </head>
 
 <body>
@@ -28,30 +34,30 @@
       </div>
     </div>
 
-    <div class="boxes">
+    <div class="group">
+      <div class="manage">
 		<?php require "dataHandler.php";
 
 			$patients = getPatients();
 			$totalPatients = count($patients);
 			$diseases = getDiseases();
+			$prescriptions = getPrescriptions();
 
-			$age = [0,0,0,0,0];
+			$age = [0,0,0,0];
 			$males = 0;
 			$females = 0;
 
 			for($patient = 0; $patient < $totalPatients; $patient++) {
 
 				$patientAge = getAge($patients[$patient]["CA_DOB"]);
-				if ($patientAge < 19) {
+				if ($patientAge < 18) {
 					$age[0] += 1;
-				} elseif ($patientAge < 31) {
+				} elseif ($patientAge < 36) {
 					$age[1] += 1;
-				} elseif ($patientAge < 51) {
+				} elseif ($patientAge < 55) {
 					$age[2] += 1;
-				} elseif ($patientAge < 76) {
-					$age[3] += 1;
 				} else {
-					$age[4] += 1;
+					$age[3] += 1;
 				}
 
 				if ($patients[$patient]["CA_GENDER"] == "M") {
@@ -62,65 +68,128 @@
 
 			} 
 
-	      	echo '<div class="box">
-			        <div class="info">
-			        	<div><b>Total Patients</b> ' . $totalPatients . '</div>
-			        	<div><b>By Gender</b>
-			        		<div><b>Male</b> ' . ($males * 100.0)/$totalPatients . '%</div>
-			        		<div><b>Females</b> ' . ($females * 100.0)/$totalPatients . '%</div> 
-			        	</div>
-			        	<div>
-			        		<div>
-			        			<div><b>0 - 18 yrs:</b> ' . ($age[0] * 100.0)/$totalPatients . '%</div>
-			        			<div style="background: #CCEEF2;height:10px;"><div style="background: #00ABC0;width:' . ($age[0] * 100.0)/$totalPatients . '%;height:10px;"></div></div>
-			        		</div>
-			        		<div>
-			        			<div><b>19 - 30 yrs:</b> ' . ($age[1] * 100.0)/$totalPatients . '%</div>
-			        			<div style="background: #CCEEF2;height:10px;"><div style="background: #00ABC0;width:' . ($age[1] * 100.0)/$totalPatients . '%;height:10px;"></div></div>
-			        		</div>
-			        		<div>
-			        			<div><b>31 - 50 yrs:</b> ' . ($age[2] * 100.0)/$totalPatients . '%</div>
-			        			<div style="background: #CCEEF2;height:10px;"><div style="background: #00ABC0;width:' . ($age[2] * 100.0)/$totalPatients . '%;height:10px;"></div></div>
-			        		</div>
-			        		<div>
-			        			<div><b>51 - 75 yrs:</b> ' . ($age[3] * 100.0)/$totalPatients . '%</div>
-			        			<div style="background: #CCEEF2;height:10px;"><div style="background: #00ABC0;width:' . ($age[3] * 100.0)/$totalPatients . '%;height:10px;"></div></div>
-			        		</div>
-			        		<div>
-			        			<div><b>76+ yrs:</b> ' . ($age[4] * 100.0)/$totalPatients . '%</div>
-			        			<div style="background: #CCEEF2;height:10px;"><div style="background: #00ABC0;width:' . ($age[4] * 100.0)/$totalPatients . '%;height:10px;"></div></div>
-			        		</div>
-			        	</div>
-			        	<div><b>Diabetes Prevelance</b> '. ($diseases["DIABETES"] * 100.0)/$totalPatients .'%</div>
-			        	<div><b>Asthma Prevelance</b> '. ($diseases["ASTHMA"] * 100.0)/$totalPatients .'%</div>
+			for($ageRange = 0; $ageRange < count($age); $ageRange++) {
+				$age[$ageRange] = round(($age[$ageRange] * 100.0)/$totalPatients,2);
+			}
+
+			echo '<div class="hospital"></div>
+			        <div class="summary">
+			          <div class="numbers">
+
+			            <div class="totalblock">
+			              <div class="totallabel">Total Patients
+			              </div>
+			              <div class="totalcount">' . $totalPatients . '</div>
+			            </div>
+
+			            <div class="numberblock">
+			              <div class="numberlabel">0 - 17 yrs: ' . $age[0] . '%</div>
+			              <div class="percentage">
+			                <div class="percentageused" style="width:' . $age[0] . '%;"></div>
+			                <div class="percentagefree" style="width:' . (100 - $age[0]) . '%;"></div>
+			              </div>
+			            </div>
+
+			            <div class="numberblock">
+			              <div class="numberlabel">18 - 35 yrs: ' . $age[1] . '%</div>
+			              <div class="percentage">
+			                <div class="percentageused" style="width:' . $age[1] . '%;"></div>
+			                <div class="percentagefree" style="width:' . (100 - $age[1]) . '%;"></div>
+			              </div>
+			            </div>
+
+			            <div class="numberblock">
+			              <div class="numberlabel">36 - 54 yrs: ' . $age[2] . '%</div>
+			              <div class="percentage">
+			                <div class="percentageused" style="width:' . $age[2] . '%;"></div>
+			                <div class="percentagefree" style="width:' . (100 - $age[2]) . '%;"></div>
+			              </div>
+			            </div>
+
+			            <div class="numberblock">
+			              <div class="numberlabel">55+ yrs: ' . $age[3] . '%</div>
+			              <div class="percentage">
+			                <div class="percentageused" style="width:' . $age[3] . '%;"></div>
+			                <div class="percentagefree" style="width:' . (100 - $age[3]) . '%;"></div>
+			              </div>
+			            </div>
+
+			            <div class="totalblock">
+			              <div class="totallabel">Diabetes
+			              </div>
+			              <div class="totalcount">' . round(($diseases["DIABETES"] * 100.0)/$totalPatients,2) . '%</div>
+			            </div>
+
+			            <div class="totalblock">
+			              <div class="totallabel">Asthma
+			              </div>
+			              <div class="totalcount">' . round(($diseases["ASTHMA"] * 100.0)/$totalPatients,2) . '%</div>
+			            </div>
+
+			          </div>
+			          <div class="charts">
+			            <canvas class="canvasbuffer" id="genderChart" width="180" height="180"></canvas>
+			            <canvas class="canvasbuffer" id="medicineChart" width="180" height="180"></canvas>
+			          </div>
 			        </div>
-				</div>';
+			        <div class="patients"></div>
+			        <div class="patientlist">
+			          <div class="patientboxheader">
+			            <div class="boxlabel">Patient List</div>
+			            <div class="boxlabel">' . $totalPatients . '</div>
+			          </div>
+			          <div class="patientbox">';
 
-          	echo '<div class="box">
-          			<div class="boxheader">
-            			<img class="boxicon" src="/images/health.svg">
-            			<div class="boxlabel">Patient List ' . $totalPatients . '</div>
-          			</div>
-          			<div class="info">';
+			for($x = 0; $x < $totalPatients; $x++) {
+				$gender = "";
 
-				for($x = 0; $x < $totalPatients; $x++) {
-					$gender = "";
+				if ($patients[$x]["CA_GENDER"] == "M")
+					$gender = "Male";
+				else
+					$gender = "Female";
 
-					if ($patients[$x]["CA_GENDER"] == "M")
-						$gender = "Male";
-					else
-						$gender = "Female";
+				echo '<div class="boxitem"><img class="beaker" src="images/patient.svg">
+              			<div class="boxitemlabel">' . $patients[$x]["CA_FIRST_NAME"] . ' ' . $patients[$x]["CA_LAST_NAME"] . ' - ' . $gender . ' - Age ' . getAge($patients[$x]["CA_DOB"]) .'</div>
+           						</div>';
+			}
+			echo '</div></div></div></div></div></body>
+				<script>
+					var ctx = document.getElementById("genderChart").getContext("2d");
 
-				    echo $patients[$x]["CA_FIRST_NAME"] . ' ' . $patients[$x]["CA_LAST_NAME"] . ' - ' . $gender . ' - Age ' . getAge($patients[$x]["CA_DOB"]) . '<br>';
-				}
-				echo "</div></div>";
+					data = {
+						datasets: [{
+					   		data: ['.$males.', '.$females.'],
+					  		backgroundColor: ["#99DDE5", "#00ABC0"]
+					    }],
+					    labels: [
+					   		"Male",
+					   		"Female"
+					    ]
+					};
+
+					var myDoughnutChart = new Chart(ctx, {
+						type: "doughnut",
+					    data: data
+					});
+
+					var ctx = document.getElementById("medicineChart").getContext("2d");
+
+					data = {
+					 	datasets: [{
+					   		data: [' . (int)$prescriptions[0]["TOTAL_PATIENTS"] . ', ' . (int)$prescriptions[1]["TOTAL_PATIENTS"] . ', ' . (int)$prescriptions[2]["TOTAL_PATIENTS"] . '],
+					     	backgroundColor: ["#99DDE5", "#00ABC0", "#CCEEF2"]
+					    }],
+					    labels: [
+					    	"' . $prescriptions[0]["DRUG_NAME"] . '",
+					      	"' . $prescriptions[1]["DRUG_NAME"] . '",
+					      	"' . $prescriptions[2]["DRUG_NAME"] . '"
+					    ]
+					};
+
+					var myDoughnutChart = new Chart(ctx, {
+					  	type: "doughnut",
+					    data: data
+					});
+				</script>';
 		?>
-      </div>
-
-    </div>
-
-  </div>
-
-</body>
-
 </html>

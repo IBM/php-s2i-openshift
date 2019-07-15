@@ -15,6 +15,16 @@ function getDiseases() {
 	return json_decode($diseases, true);
 }
 
+function getPrescriptions() {
+	$prescriptions = file_get_contents($GLOBALS["API_BASE_URL"] . "/resources/v1/getInfo/prescription");
+
+	$prescriptions = json_decode($prescriptions, true);
+
+	usort($prescriptions, 'sortByTotal');
+	
+	return $prescriptions;
+}
+
 function getAge($dob) 
 { 
    	$dob=explode("-",$dob); 
@@ -26,3 +36,9 @@ function getAge($dob)
  		$age--; 
  	return $age; 
 }
+
+function sortByTotal($a, $b) {
+ 	$dA = (int)$a['TOTAL_PATIENTS'];
+ 	$dB = (int)$b['TOTAL_PATIENTS'];
+	return $dA < $dB;
+ }
