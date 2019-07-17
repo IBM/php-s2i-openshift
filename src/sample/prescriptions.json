@@ -1,0 +1,542 @@
+[
+  {
+    "DRUG_NAME": " Albuterol",
+    "TOTAL_PATIENTS": "146"
+  },
+  {
+    "DRUG_NAME": " Amiodarone hydrocholoride",
+    "TOTAL_PATIENTS": "85"
+  },
+  {
+    "DRUG_NAME": " Cefaclor",
+    "TOTAL_PATIENTS": "31"
+  },
+  {
+    "DRUG_NAME": " denosumab",
+    "TOTAL_PATIENTS": "1"
+  },
+  {
+    "DRUG_NAME": " DOCEtaxel",
+    "TOTAL_PATIENTS": "54"
+  },
+  {
+    "DRUG_NAME": " Donepezil hydrochloride",
+    "TOTAL_PATIENTS": "17"
+  },
+  {
+    "DRUG_NAME": " Doxorubicin Hydrochloride",
+    "TOTAL_PATIENTS": "3"
+  },
+  {
+    "DRUG_NAME": " Epinephrine",
+    "TOTAL_PATIENTS": "97"
+  },
+  {
+    "DRUG_NAME": " Epirubicin Hydrochloride",
+    "TOTAL_PATIENTS": "9"
+  },
+  {
+    "DRUG_NAME": " Epoetin Alfa",
+    "TOTAL_PATIENTS": "2"
+  },
+  {
+    "DRUG_NAME": " Ethinyl Estradiol",
+    "TOTAL_PATIENTS": "99"
+  },
+  {
+    "DRUG_NAME": " Fluorouracil",
+    "TOTAL_PATIENTS": "3"
+  },
+  {
+    "DRUG_NAME": " Fluticasone propionate",
+    "TOTAL_PATIENTS": "241"
+  },
+  {
+    "DRUG_NAME": " fulvestrant",
+    "TOTAL_PATIENTS": "4"
+  },
+  {
+    "DRUG_NAME": " Furosemide",
+    "TOTAL_PATIENTS": "99"
+  },
+  {
+    "DRUG_NAME": " hyaluronidase-oysk",
+    "TOTAL_PATIENTS": "9"
+  },
+  {
+    "DRUG_NAME": " Leuprolide Acetate",
+    "TOTAL_PATIENTS": "54"
+  },
+  {
+    "DRUG_NAME": " medroxyprogesterone acetate",
+    "TOTAL_PATIENTS": "420"
+  },
+  {
+    "DRUG_NAME": " Metformin hydrochloride",
+    "TOTAL_PATIENTS": "112"
+  },
+  {
+    "DRUG_NAME": " metoprolol succinate",
+    "TOTAL_PATIENTS": "113"
+  },
+  {
+    "DRUG_NAME": " Morphine Sulfate",
+    "TOTAL_PATIENTS": "17"
+  },
+  {
+    "DRUG_NAME": " nicotine transdermal patch",
+    "TOTAL_PATIENTS": "42"
+  },
+  {
+    "DRUG_NAME": " Ondansetron",
+    "TOTAL_PATIENTS": "17"
+  },
+  {
+    "DRUG_NAME": " oxaliplatin",
+    "TOTAL_PATIENTS": "47"
+  },
+  {
+    "DRUG_NAME": " Pamidronate Disodium",
+    "TOTAL_PATIENTS": "3"
+  },
+  {
+    "DRUG_NAME": " Propofol",
+    "TOTAL_PATIENTS": "17"
+  },
+  {
+    "DRUG_NAME": "abemaciclib ",
+    "TOTAL_PATIENTS": "5"
+  },
+  {
+    "DRUG_NAME": "Abuse-Deterrent ",
+    "TOTAL_PATIENTS": "185"
+  },
+  {
+    "DRUG_NAME": "Acetaminophen ",
+    "TOTAL_PATIENTS": "2609"
+  },
+  {
+    "DRUG_NAME": "Acetaminophen/Hydrocodone",
+    "TOTAL_PATIENTS": "13"
+  },
+  {
+    "DRUG_NAME": "Alendronic acid ",
+    "TOTAL_PATIENTS": "72"
+  },
+  {
+    "DRUG_NAME": "Alfentanil",
+    "TOTAL_PATIENTS": "3"
+  },
+  {
+    "DRUG_NAME": "Allopurinol ",
+    "TOTAL_PATIENTS": "21"
+  },
+  {
+    "DRUG_NAME": "Alteplase ",
+    "TOTAL_PATIENTS": "115"
+  },
+  {
+    "DRUG_NAME": "Amlodipine ",
+    "TOTAL_PATIENTS": "343"
+  },
+  {
+    "DRUG_NAME": "Amoxicillin ",
+    "TOTAL_PATIENTS": "2045"
+  },
+  {
+    "DRUG_NAME": "Ampicillin ",
+    "TOTAL_PATIENTS": "224"
+  },
+  {
+    "DRUG_NAME": "anastrozole ",
+    "TOTAL_PATIENTS": "3"
+  },
+  {
+    "DRUG_NAME": "Aspirin ",
+    "TOTAL_PATIENTS": "1293"
+  },
+  {
+    "DRUG_NAME": "Astemizole ",
+    "TOTAL_PATIENTS": "27"
+  },
+  {
+    "DRUG_NAME": "Atenolol ",
+    "TOTAL_PATIENTS": "388"
+  },
+  {
+    "DRUG_NAME": "atomoxetine ",
+    "TOTAL_PATIENTS": "12"
+  },
+  {
+    "DRUG_NAME": "Atorvastatin ",
+    "TOTAL_PATIENTS": "29"
+  },
+  {
+    "DRUG_NAME": "Atropine Sulfate ",
+    "TOTAL_PATIENTS": "97"
+  },
+  {
+    "DRUG_NAME": "Camila ",
+    "TOTAL_PATIENTS": "223"
+  },
+  {
+    "DRUG_NAME": "Captopril ",
+    "TOTAL_PATIENTS": "39"
+  },
+  {
+    "DRUG_NAME": "Carbamazepine[Tegretol]",
+    "TOTAL_PATIENTS": "74"
+  },
+  {
+    "DRUG_NAME": "Cefaclor ",
+    "TOTAL_PATIENTS": "165"
+  },
+  {
+    "DRUG_NAME": "Cefuroxime ",
+    "TOTAL_PATIENTS": "283"
+  },
+  {
+    "DRUG_NAME": "cetirizine hydrochloride ",
+    "TOTAL_PATIENTS": "30"
+  },
+  {
+    "DRUG_NAME": "Chlorpheniramine Maleate ",
+    "TOTAL_PATIENTS": "48"
+  },
+  {
+    "DRUG_NAME": "Cisplatin ",
+    "TOTAL_PATIENTS": "42"
+  },
+  {
+    "DRUG_NAME": "Clonazepam [Klonopin]",
+    "TOTAL_PATIENTS": "76"
+  },
+  {
+    "DRUG_NAME": "Clopidogrel ",
+    "TOTAL_PATIENTS": "207"
+  },
+  {
+    "DRUG_NAME": "Colchicine ",
+    "TOTAL_PATIENTS": "11"
+  },
+  {
+    "DRUG_NAME": "Cyclophosphamide ",
+    "TOTAL_PATIENTS": "9"
+  },
+  {
+    "DRUG_NAME": "cycloSPORINE ",
+    "TOTAL_PATIENTS": "11"
+  },
+  {
+    "DRUG_NAME": "desflurane ",
+    "TOTAL_PATIENTS": "2"
+  },
+  {
+    "DRUG_NAME": "Diazepam [Valium]",
+    "TOTAL_PATIENTS": "65"
+  },
+  {
+    "DRUG_NAME": "Digoxin ",
+    "TOTAL_PATIENTS": "89"
+  },
+  {
+    "DRUG_NAME": "diphenhydrAMINE Hydrochloride ",
+    "TOTAL_PATIENTS": "80"
+  },
+  {
+    "DRUG_NAME": "Donepezil hydrochloride ",
+    "TOTAL_PATIENTS": "11"
+  },
+  {
+    "DRUG_NAME": "Doxycycline Monohydrate ",
+    "TOTAL_PATIENTS": "260"
+  },
+  {
+    "DRUG_NAME": "duloxetine ",
+    "TOTAL_PATIENTS": "3"
+  },
+  {
+    "DRUG_NAME": "Errin ",
+    "TOTAL_PATIENTS": "193"
+  },
+  {
+    "DRUG_NAME": "Estrostep Fe ",
+    "TOTAL_PATIENTS": "322"
+  },
+  {
+    "DRUG_NAME": "Etonogestrel ",
+    "TOTAL_PATIENTS": "227"
+  },
+  {
+    "DRUG_NAME": "Etoposide ",
+    "TOTAL_PATIENTS": "5"
+  },
+  {
+    "DRUG_NAME": "exemestane ",
+    "TOTAL_PATIENTS": "4"
+  },
+  {
+    "DRUG_NAME": "Fentanyl",
+    "TOTAL_PATIENTS": "3"
+  },
+  {
+    "DRUG_NAME": "ferrous sulfate ",
+    "TOTAL_PATIENTS": "125"
+  },
+  {
+    "DRUG_NAME": "Fexofenadine hydrochloride ",
+    "TOTAL_PATIENTS": "56"
+  },
+  {
+    "DRUG_NAME": "Fluoxetine ",
+    "TOTAL_PATIENTS": "14"
+  },
+  {
+    "DRUG_NAME": "Galantamine ",
+    "TOTAL_PATIENTS": "62"
+  },
+  {
+    "DRUG_NAME": "heparin sodium  porcine",
+    "TOTAL_PATIENTS": "17"
+  },
+  {
+    "DRUG_NAME": "Hydrochlorothiazide ",
+    "TOTAL_PATIENTS": "719"
+  },
+  {
+    "DRUG_NAME": "Hydrocortisone ",
+    "TOTAL_PATIENTS": "88"
+  },
+  {
+    "DRUG_NAME": "Ibuprofen ",
+    "TOTAL_PATIENTS": "1594"
+  },
+  {
+    "DRUG_NAME": "insulin human  isophane ",
+    "TOTAL_PATIENTS": "91"
+  },
+  {
+    "DRUG_NAME": "Isoflurane ",
+    "TOTAL_PATIENTS": "14"
+  },
+  {
+    "DRUG_NAME": "Jolivette ",
+    "TOTAL_PATIENTS": "234"
+  },
+  {
+    "DRUG_NAME": "Kyleena ",
+    "TOTAL_PATIENTS": "26"
+  },
+  {
+    "DRUG_NAME": "Lasix ",
+    "TOTAL_PATIENTS": "113"
+  },
+  {
+    "DRUG_NAME": "letrozole ",
+    "TOTAL_PATIENTS": "3"
+  },
+  {
+    "DRUG_NAME": "Leucovorin ",
+    "TOTAL_PATIENTS": "47"
+  },
+  {
+    "DRUG_NAME": "Levonorgestrel ",
+    "TOTAL_PATIENTS": "230"
+  },
+  {
+    "DRUG_NAME": "Levora ",
+    "TOTAL_PATIENTS": "164"
+  },
+  {
+    "DRUG_NAME": "Levothyroxine Sodium ",
+    "TOTAL_PATIENTS": "16"
+  },
+  {
+    "DRUG_NAME": "Liletta ",
+    "TOTAL_PATIENTS": "34"
+  },
+  {
+    "DRUG_NAME": "Loratadine ",
+    "TOTAL_PATIENTS": "87"
+  },
+  {
+    "DRUG_NAME": "Memantine hydrochloride ",
+    "TOTAL_PATIENTS": "25"
+  },
+  {
+    "DRUG_NAME": "Meperidine Hydrochloride ",
+    "TOTAL_PATIENTS": "304"
+  },
+  {
+    "DRUG_NAME": "Mestranol / Norethynodrel [Enovid]",
+    "TOTAL_PATIENTS": "539"
+  },
+  {
+    "DRUG_NAME": "Methotrexate ",
+    "TOTAL_PATIENTS": "8"
+  },
+  {
+    "DRUG_NAME": "Methylphenidate Hydrochloride ",
+    "TOTAL_PATIENTS": "52"
+  },
+  {
+    "DRUG_NAME": "Midazolam ",
+    "TOTAL_PATIENTS": "17"
+  },
+  {
+    "DRUG_NAME": "Milnacipran hydrochloride ",
+    "TOTAL_PATIENTS": "5"
+  },
+  {
+    "DRUG_NAME": "Mirena ",
+    "TOTAL_PATIENTS": "244"
+  },
+  {
+    "DRUG_NAME": "Naproxen ",
+    "TOTAL_PATIENTS": "37"
+  },
+  {
+    "DRUG_NAME": "Naproxen sodium ",
+    "TOTAL_PATIENTS": "937"
+  },
+  {
+    "DRUG_NAME": "Natazia ",
+    "TOTAL_PATIENTS": "168"
+  },
+  {
+    "DRUG_NAME": "Nitrofurantoin ",
+    "TOTAL_PATIENTS": "389"
+  },
+  {
+    "DRUG_NAME": "NITROFURANTOIN  MACROCRYSTALS ",
+    "TOTAL_PATIENTS": "79"
+  },
+  {
+    "DRUG_NAME": "Nitroglycerin ",
+    "TOTAL_PATIENTS": "161"
+  },
+  {
+    "DRUG_NAME": "Norinyl ",
+    "TOTAL_PATIENTS": "644"
+  },
+  {
+    "DRUG_NAME": "NuvaRing ",
+    "TOTAL_PATIENTS": "156"
+  },
+  {
+    "DRUG_NAME": "Ortho Tri-Cyclen ",
+    "TOTAL_PATIENTS": "521"
+  },
+  {
+    "DRUG_NAME": "PACLitaxel ",
+    "TOTAL_PATIENTS": "44"
+  },
+  {
+    "DRUG_NAME": "palbociclib ",
+    "TOTAL_PATIENTS": "5"
+  },
+  {
+    "DRUG_NAME": "Pancreatin ",
+    "TOTAL_PATIENTS": "1"
+  },
+  {
+    "DRUG_NAME": "Penicillin G ",
+    "TOTAL_PATIENTS": "547"
+  },
+  {
+    "DRUG_NAME": "Penicillin V Potassium ",
+    "TOTAL_PATIENTS": "1552"
+  },
+  {
+    "DRUG_NAME": "Phenazopyridine hydrochloride ",
+    "TOTAL_PATIENTS": "389"
+  },
+  {
+    "DRUG_NAME": "Piperacillin ",
+    "TOTAL_PATIENTS": "17"
+  },
+  {
+    "DRUG_NAME": "predniSONE ",
+    "TOTAL_PATIENTS": "138"
+  },
+  {
+    "DRUG_NAME": "pregabalin ",
+    "TOTAL_PATIENTS": "4"
+  },
+  {
+    "DRUG_NAME": "Pulmozyme (Dornase Alfa)",
+    "TOTAL_PATIENTS": "1"
+  },
+  {
+    "DRUG_NAME": "Remifentanil",
+    "TOTAL_PATIENTS": "3"
+  },
+  {
+    "DRUG_NAME": "ribociclib ",
+    "TOTAL_PATIENTS": "9"
+  },
+  {
+    "DRUG_NAME": "Rocuronium bromide ",
+    "TOTAL_PATIENTS": "17"
+  },
+  {
+    "DRUG_NAME": "Seasonique ",
+    "TOTAL_PATIENTS": "270"
+  },
+  {
+    "DRUG_NAME": "Sertraline ",
+    "TOTAL_PATIENTS": "17"
+  },
+  {
+    "DRUG_NAME": "sevoflurane ",
+    "TOTAL_PATIENTS": "1"
+  },
+  {
+    "DRUG_NAME": "Simvastatin ",
+    "TOTAL_PATIENTS": "141"
+  },
+  {
+    "DRUG_NAME": "Simvistatin ",
+    "TOTAL_PATIENTS": "297"
+  },
+  {
+    "DRUG_NAME": "Sodium Chloride ",
+    "TOTAL_PATIENTS": "17"
+  },
+  {
+    "DRUG_NAME": "Sufentanil",
+    "TOTAL_PATIENTS": "8"
+  },
+  {
+    "DRUG_NAME": "Tacrine ",
+    "TOTAL_PATIENTS": "3"
+  },
+  {
+    "DRUG_NAME": "Tamoxifen ",
+    "TOTAL_PATIENTS": "19"
+  },
+  {
+    "DRUG_NAME": "Terfenadine ",
+    "TOTAL_PATIENTS": "7"
+  },
+  {
+    "DRUG_NAME": "Trinessa ",
+    "TOTAL_PATIENTS": "266"
+  },
+  {
+    "DRUG_NAME": "Verapamil Hydrochloride ",
+    "TOTAL_PATIENTS": "87"
+  },
+  {
+    "DRUG_NAME": "Vitamin B ",
+    "TOTAL_PATIENTS": "116"
+  },
+  {
+    "DRUG_NAME": "Warfarin Sodium ",
+    "TOTAL_PATIENTS": "89"
+  },
+  {
+    "DRUG_NAME": "Yaz ",
+    "TOTAL_PATIENTS": "267"
+  }
+]

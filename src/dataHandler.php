@@ -1,27 +1,39 @@
 <?php
 
-$API_BASE_URL = "";
+$API_BASE_URL = getenv("apiBaseUrl");
 
 function getPatients() {
 
-	$response = file_get_contents($GLOBALS["API_BASE_URL"] . "/resources/v1/getInfo/patients");
+	if ($GLOBALS["API_BASE_URL"]) {
+		$patients = file_get_contents($GLOBALS["API_BASE_URL"] . "/resources/v1/getInfo/patients");
+	} else {
+		$patients = file_get_contents("sample/patients.json");
+	}
 
-	return json_decode($response, true)["ResultSet Output"];
+	return json_decode($patients, true)["ResultSet Output"];
 }
 
 function getDiseases() {
-	$diseases = file_get_contents($GLOBALS["API_BASE_URL"] . "/resources/v1/listDiseases");
+	if ($GLOBALS["API_BASE_URL"]) {
+		$diseases = file_get_contents($GLOBALS["API_BASE_URL"] . "/resources/v1/listDiseases");
+	} else {
+		$diseases = file_get_contents("sample/diseases.json");
+	}
 
 	return json_decode($diseases, true);
 }
 
 function getPrescriptions() {
-	$prescriptions = file_get_contents($GLOBALS["API_BASE_URL"] . "/resources/v1/getInfo/prescription");
+	if ($GLOBALS["API_BASE_URL"]) {
+		$prescriptions = file_get_contents($GLOBALS["API_BASE_URL"] . "/resources/v1/getInfo/prescription");
+	} else {
+		$prescriptions = file_get_contents("sample/prescriptions.json");
+	}
 
 	$prescriptions = json_decode($prescriptions, true);
 
 	usort($prescriptions, 'sortByTotal');
-	
+
 	return $prescriptions;
 }
 
