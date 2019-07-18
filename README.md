@@ -20,11 +20,13 @@ Here's a view an administrator might see when they interact with the Summit Heal
 
 ![](readme_images/screenshot.png)
 
-# Architecture (TODO)
+# Architecture
 
 ![](readme_images/architecture.png)
 
-1. 
+1. User opens PHP application in a browser.
+2a. If no API URL is specified, the PHP application will populate the application with local data from JSON files.
+2b. If an API URL is specified, the PHP application will populate the application with data from REST API calls of the [Summit Health JEE Application on Openshift](https://github.com/IBM/summit-jee-openshift).
 
 # Steps
 
