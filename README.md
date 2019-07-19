@@ -16,7 +16,15 @@ Recently, Summit Health decided to modernize their application and break it up i
 
 Since moving to OpenShift, Summit Health has expanded to include new microservices that include an Admin application (the application found in this repo) and an Analytics application.
 
-Here's a view an administrator might see when they interact with the Summit Health Analytics Application:
+This Admin application is used for Administrators of Summit Health to view all of the patients that are a part of Summit Health along with some statistical breakdowns of the patients that include:
+
+* Age
+* Gender
+* Top three medications used
+* Diabetes prevalence 
+* Asthma prevalence 
+
+Here's a view an administrator might see when they interact with the Summit Health Admin Application:
 
 ![](readme_images/screenshot.png)
 
@@ -45,8 +53,6 @@ Follow these steps to setup and run this code pattern on OpenShift. The steps ar
 ## 2. Fork the repo
 
 1. Scroll to the top of this repo and press the **Fork** button.
-
-![](readme_images/fork.png)
 
 2. Select the account from the list that you would like to fork the repo to.
 
