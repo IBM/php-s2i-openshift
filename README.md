@@ -1,22 +1,22 @@
-# Summit Health Admin PHP Application on Openshift
+# App Modernization with PHP Source to Image on OpenShift
 
 This project is a conceptual PHP web application for a health records system, designed to showcase best in class integration of modern cloud technology running on OpenShift as a Source to Image (S2I) application.
 
-## Summit Health Context
+## Example Health Context
 
-Summit Health is a conceptual healthcare/insurance type company. It has been around a long time, and has 100s of thousands of patient records. Summit's health records look very similar to the health records of most insurance companies.
+Example Health is a conceptual healthcare/insurance type company. It has been around a long time, and has 100s of thousands of patient records. Example's health records look very similar to the health records of most insurance companies.
 
-Originally, Summit Health used a monolithic application structure for their application. Their application structure was a full stack Java application running on WebSphere connected to a DB2 database on System z. Here's what the original architecture for Summit Health looked like: 
+Originally, Example Health used a monolithic application structure for their application. Their application structure was a full stack Java application running on WebSphere connected to a DB2 database on System z. Here's what the original architecture for Example Health looked like: 
 
 ![](readme_images/original_architecture.png)
 
-Recently, Summit Health decided to modernize their application and break it up into microservices. They decided to move to a SQL database connected to a Java EE application running on Open Liberty for the business logic and a Node.js application for the Patient UI. In addition, Summit Health also decided to bring these applications to OpenShift in the Cloud. The new current architecture for Summit Health looks like this: 
+Recently, Example Health decided to modernize their application and break it up into microservices. They decided to move to a SQL database connected to a Java EE application running on Open Liberty for the business logic and a Node.js application for the Patient UI. In addition, Example Health also decided to bring these applications to OpenShift in the Cloud. The new current architecture for Example Health looks like this: 
 
 ![](readme_images/new_architecture.png)
 
-Since moving to OpenShift, Summit Health has expanded to include new microservices that include an Admin application (the application found in this repo) and an Analytics application.
+Since moving to OpenShift, Example Health has expanded to include new microservices that include an Admin application (the application found in this repo) and an Analytics application.
 
-This Admin application is used for Administrators of Summit Health to view all of the patients that are a part of Summit Health along with some statistical breakdowns of the patients that include:
+This Admin application is used for Administrators of Example Health to view all of the patients that are a part of Example Health along with some statistical breakdowns of the patients that include:
 
 * Age
 * Gender
@@ -24,7 +24,7 @@ This Admin application is used for Administrators of Summit Health to view all o
 * Diabetes prevalence 
 * Asthma prevalence 
 
-Here's a view an administrator might see when they interact with the Summit Health Admin Application:
+Here's a view an administrator might see when they interact with the Example Health Admin Application:
 
 ![](readme_images/screenshot.png)
 
@@ -35,7 +35,7 @@ Here's a view an administrator might see when they interact with the Summit Heal
 1. User opens PHP application in a browser.
 2. 
 	* **2a**: If no API URL is specified, the PHP application will populate the application with local data from JSON files.
-	* **2b**: If an API URL is specified, the PHP application will populate the application with data from REST API calls of the [Summit Health JEE Application on Openshift](https://github.com/IBM/summit-jee-openshift).
+	* **2b**: If an API URL is specified, the PHP application will populate the application with data from REST API calls of the [Example Health JEE Application on Openshift](https://github.com/IBM/summit-jee-openshift).
 
 # Steps
 
@@ -86,7 +86,7 @@ Follow these steps to setup and run this code pattern on OpenShift. The steps ar
 	* Context Dir
 	> NOTE: The context directory for this application is `/src`
 	* Build Configuration Environment Variables
-	> NOTE: This is optional if you are planning on deploying and running the [Summit Health JEE Application on Openshift](https://github.com/IBM/summit-jee-openshift). The variable name is `apiBaseUrl` and the value is the API Base URL of the Summit Health JEE Application.
+	> NOTE: This is optional if you are planning on deploying and running the [Example Health JEE Application on Openshift](https://github.com/IBM/summit-jee-openshift). The variable name is `apiBaseUrl` and the value is the API Base URL of the Example Health JEE Application.
 
 ![](readme_images/configurations.png)
 
@@ -100,7 +100,7 @@ Follow these steps to setup and run this code pattern on OpenShift. The steps ar
 
 ## 4. Update the gateway timeout settings
 
-> NOTE: This step is only necessary if you have set up the [Summit Health JEE Application on Openshift](https://github.com/IBM/summit-jee-openshift).
+> NOTE: This step is only necessary if you have set up the [Example Health JEE Application on Openshift](https://github.com/IBM/summit-jee-openshift).
 
 The default OpenShift timeout for the gateway is 30 seconds. This is too short for long running REST API calls. To increase the timeout time, do the following: 
 

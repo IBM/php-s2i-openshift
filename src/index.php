@@ -5,15 +5,15 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Summit Health</title>
-  <meta name="description" content="Summit Health Admin">
-  <meta name="Max Shapiro" content="Summit Health">
+  <title>Example Health</title>
+  <meta name="description" content="Example Health Admin">
+  <meta name="Max Shapiro" content="Example Health">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
   <link rel="stylesheet" href="style/styles.css?v=1.0">
   <link rel="stylesheet" href="style/admin.css?v=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
 
-  <link rel="icon" type="image/png" href="images/summitlogo@2x.png">
+  <link rel="icon" type="image/png" href="images/examplelogo@2x.png">
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js'></script>
 
@@ -24,8 +24,8 @@
     <div class="banner">
       <div class="control">
         <div class="brand">
-          <img class="logo" src="/images/logo.svg" alt="summit health logo">
-          <div class="summit">Summit Health</div>
+          <img class="logo" src="/images/logo.svg" alt="example health logo">
+          <div class="example">Example Health</div>
         </div>
         <menu class="menu">
           <menuitem class="lit">management console</menuitem>
