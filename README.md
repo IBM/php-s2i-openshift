@@ -90,8 +90,6 @@ Follow these steps to setup and run this code pattern on OpenShift. The steps ar
 
 ![](readme_images/configurations.png)
 
-![](readme_images/github_url.png)
-
 ![](readme_images/environment_variable.png)
 
 7. Continue to the project overview and open the dropdown to follow the progress of deploying the application in the logs. This should take a couple minutes. Once the deployment and build are finished, you can now access the application from the provided URL.
