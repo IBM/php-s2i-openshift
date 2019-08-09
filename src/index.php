@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="style/admin.css?v=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
 
-  <link rel="icon" type="image/png" href="images/examplelogo@2x.png">
+  <link rel="icon" type="image/png" href="images/fictional.svg">
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js'></script>
 
