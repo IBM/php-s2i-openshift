@@ -24,8 +24,8 @@
     <div class="banner">
       <div class="control">
         <div class="brand">
-          <img class="logo" src="/images/logo.svg" alt="example health logo">
-          <div class="example">Example Health</div>
+          <img class="logo" src="/images/fictional.svg" alt="example health logo">
+          <div class="Fictional">Example Health</div>
         </div>
         <menu class="menu">
           <menuitem class="lit">management console</menuitem>
@@ -133,12 +133,12 @@
 			          </div>
 			        </div>
 			        <div class="patients"></div>
-			        <div class="patientlist">
-			          <div class="patientboxheader">
+			        <div class="box boxmod">
+			          <div class="boxheader">
 			            <div class="boxlabel">Patient List</div>
 			            <div class="boxlabel">' . $totalPatients . '</div>
 			          </div>
-			          <div class="patientbox">';
+			          <div class="listbox">';
 
 			for($x = 0; $x < $totalPatients; $x++) {
 				$gender = "";
@@ -159,7 +159,7 @@
 					data = {
 						datasets: [{
 					   		data: ['.$males.', '.$females.'],
-					  		backgroundColor: ["#99DDE5", "#00ABC0"]
+					  		backgroundColor: ["#ff6494", "#ffa18b", "#ffd0c5"]
 					    }],
 					    labels: [
 					   		"Male",
@@ -177,7 +177,7 @@
 					data = {
 					 	datasets: [{
 					   		data: [' . (int)$prescriptions[0]["TOTAL_PATIENTS"] . ', ' . (int)$prescriptions[1]["TOTAL_PATIENTS"] . ', ' . (int)$prescriptions[2]["TOTAL_PATIENTS"] . '],
-					     	backgroundColor: ["#99DDE5", "#00ABC0", "#CCEEF2"]
+					     	backgroundColor: ["#ff6494", "#ffa18b", "#ffd0c5"]
 					    }],
 					    labels: [
 					    	"' . $prescriptions[0]["DRUG_NAME"] . '",
