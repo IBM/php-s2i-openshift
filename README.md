@@ -1,12 +1,12 @@
-# App Modernization with PHP Source to Image on OpenShift
+# App Modernization with PHP Source-to-Image on OpenShift
 
-This project is a conceptual PHP web application for a health records system, designed to showcase best in class integration of modern cloud technology running on OpenShift as a Source to Image (S2I) application.
+This project is a conceptual PHP web application for a health records system, designed to showcase best in class integration of modern cloud technology running on OpenShift as a Source-to-Image (S2I) application.
 
 ## Example Health Context
 
 Example Health is a conceptual healthcare/insurance type company. It has been around a long time, and has 100s of thousands of patient records. Example's health records look very similar to the health records of most insurance companies.
 
-Originally, Example Health used a monolithic application structure for their application. Their application structure was a full stack Java application running on WebSphere connected to a DB2 database on System z. Here's what the original architecture for Example Health looked like: 
+Originally, Example Health used a monolithic application structure for their application. Their application structure was a full stack Java application running on WebSphere connected to a Db2 database on System Z. Here's what the original architecture for Example Health looked like: 
 
 ![](readme_images/original_architecture.png)
 
